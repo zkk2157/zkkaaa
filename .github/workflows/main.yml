@@ -40,7 +40,7 @@ jobs:
         run: npm run build
 
       - name: 部署到PAGES
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: npx hexo generate
         with: 
           branch: ghb-page
           folder: dist/
